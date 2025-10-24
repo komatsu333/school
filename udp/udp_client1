@@ -1,0 +1,29 @@
+import socket
+import sys
+
+IPADDR = ""
+PORT = 55555
+
+argc = len(sys.argv)
+if argc < 2:
+	IPADDR = input('接続先IPアドレス：')
+else:
+	IPADDR = sys.argv[1]
+
+print(f'{IPADDR}に接続します')
+sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+
+try:
+	while True:
+		data = input("> ")
+		if data == "exit":
+			break
+		else:
+			sock.sendto(data.encode('utf-8'),(IPADDR,PORT))
+		data,cl_addr = sock.recvfrom(1024)
+		print(data.decode('utf-8'))
+
+except KeyboardInterrupt:
+	print('終了します')
+
+sock.close()
