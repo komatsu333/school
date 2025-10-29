@@ -16,20 +16,20 @@
 #include "HeboTime.h"
 HeboTime time;
 char buffer[30];
-#define tests 1 
-#define TURN_SPEED 200     //90
-#define SPEED  255    //both sides of the motor speed
+
+#define TURN_SPEED 200  
+#define SPEED  255    
 #define SHIFT_SPEED 130  
 
 #define TURN_TIME 500  
 #define MOVE_TIME 500  
 
-#define speedPinR 9   //  RIGHT WHEEL PWM pin D45 connect front MODEL-X ENA 
-#define RightMotorDirPin1  22    //Front Right Motor direction pin 1 to Front MODEL-X IN1  (K1)
-#define RightMotorDirPin2  24   //Front Right Motor direction pin 2 to Front MODEL-X IN2   (K1)                                 
-#define LeftMotorDirPin1  26    //Left front Motor direction pin 1 to Front MODEL-X IN3 (  K3)
-#define LeftMotorDirPin2  28   //Left front Motor direction pin 2 to Front MODEL-X IN4 (  K3)
-#define speedPinL 10   // Left WHEEL PWM pin D7 connect front MODEL-X ENB
+#define speedPinR 9                               //  RIGHT WHEEL PWM pin D45 connect front MODEL-X ENA 
+#define RightMotorDirPin1  22                     //Front Right Motor direction pin 1 to Front MODEL-X IN1  (K1)
+#define RightMotorDirPin2  24                     //Front Right Motor direction pin 2 to Front MODEL-X IN2   (K1)                                 
+#define LeftMotorDirPin1  26                      //Left front Motor direction pin 1 to Front MODEL-X IN3 (  K3)
+#define LeftMotorDirPin2  28                     //Left front Motor direction pin 2 to Front MODEL-X IN4 (  K3)
+#define speedPinL 10                              // Left WHEEL PWM pin D7 connect front MODEL-X ENB
 
 #define speedPinRB 11   //  RIGHT WHEEL PWM pin connect Back MODEL-X ENA 
 #define RightMotorDirPin1B  5    //Rear Right Motor direction pin 1 to Back MODEL-X IN1 (  K1)
@@ -43,12 +43,12 @@ char buffer[30];
 #define Echo_PIN    31 // Ultrasonic Echo pin connect to A5
 #define Trig_PIN    30  // Ultrasonic Trig pin connect to A4
 
-#define MID_SPEED 100*3/4*tests    
-#define HIGH_SPEED 120*3/4*tests
-#define LOW_SPEED 90*3/4*tests
-#define LONG_DELAY_TIME 110*3/4*tests  
+#define MID_SPEED 100*3/4    
+#define HIGH_SPEED 120*3/4
+#define LOW_SPEED 90*3/4
+#define LONG_DELAY_TIME 110*3/4  
 #define DELAY_TIME 40  
-#define SHORT_DELAY_TIME 70*3/4*tests   
+#define SHORT_DELAY_TIME 70*3/4   
          
 #define speedPinR 9   //50  Front Wheel PWM pin connect Right MODEL-X ENA 
 #define RightMotorDirPin1  22    //48 Front Right Motor direction pin 1 to Right MODEL-X IN1  (K1)
