@@ -24,24 +24,24 @@ char buffer[30];
 #define TURN_TIME 500  
 #define MOVE_TIME 500  
 
-#define speedPinR 9                               //  RIGHT WHEEL PWM pin D45 connect front MODEL-X ENA 
-#define RightMotorDirPin1  22                     //Front Right Motor direction pin 1 to Front MODEL-X IN1  (K1)
-#define RightMotorDirPin2  24                     //Front Right Motor direction pin 2 to Front MODEL-X IN2   (K1)                                 
-#define LeftMotorDirPin1  26                      //Left front Motor direction pin 1 to Front MODEL-X IN3 (  K3)
-#define LeftMotorDirPin2  28                     //Left front Motor direction pin 2 to Front MODEL-X IN4 (  K3)
-#define speedPinL 10                              // Left WHEEL PWM pin D7 connect front MODEL-X ENB
+#define speedPinR 9                              	//  RIGHT WHEEL PWM pin D45 connect front MODEL-X ENA 
+#define RightMotorDirPin1  22                    	//Front Right Motor direction pin 1 to Front MODEL-X IN1  (K1)
+#define RightMotorDirPin2  24                    	//Front Right Motor direction pin 2 to Front MODEL-X IN2   (K1)                                 
+#define LeftMotorDirPin1  26                     	//Left front Motor direction pin 1 to Front MODEL-X IN3 (  K3)
+#define LeftMotorDirPin2  28                    	//Left front Motor direction pin 2 to Front MODEL-X IN4 (  K3)
+#define speedPinL 10                             	// Left WHEEL PWM pin D7 connect front MODEL-X ENB
 
-#define speedPinRB 11   //  RIGHT WHEEL PWM pin connect Back MODEL-X ENA 
-#define RightMotorDirPin1B  5    //Rear Right Motor direction pin 1 to Back MODEL-X IN1 (  K1)
-#define RightMotorDirPin2B 6    //Rear Right Motor direction pin 2 to Back MODEL-X IN2 (  K1) 
-#define LeftMotorDirPin1B 7    //Rear left Motor direction pin 1 to Back MODEL-X IN3  K3
-#define LeftMotorDirPin2B 8  //Rear left Motor direction pin 2 to Back MODEL-X IN4  k3
-#define speedPinLB 12    //   LEFT WHEEL  PWM pin D8 connect Rear MODEL-X ENB
+#define speedPinRB 11   							//  RIGHT WHEEL PWM pin connect Back MODEL-X ENA 
+#define RightMotorDirPin1B  5    					//Rear Right Motor direction pin 1 to Back MODEL-X IN1 (  K1)
+#define RightMotorDirPin2B 6    					//Rear Right Motor direction pin 2 to Back MODEL-X IN2 (  K1) 
+#define LeftMotorDirPin1B 7    						//Rear left Motor direction pin 1 to Back MODEL-X IN3  K3
+#define LeftMotorDirPin2B 8  						//Rear left Motor direction pin 2 to Back MODEL-X IN4  k3
+#define speedPinLB 12   							//   LEFT WHEEL  PWM pin D8 connect Rear MODEL-X ENB
 
 
-#define SERVO_PIN     13  //servo connect to D5
-#define Echo_PIN    31 // Ultrasonic Echo pin connect to A5
-#define Trig_PIN    30  // Ultrasonic Trig pin connect to A4
+#define SERVO_PIN     13  							//servo connect to D5
+#define Echo_PIN    31 								// Ultrasonic Echo pin connect to A5
+#define Trig_PIN    30  							// Ultrasonic Trig pin connect to A4
 
 #define MID_SPEED 100*3/4    
 #define HIGH_SPEED 120*3/4
@@ -50,59 +50,59 @@ char buffer[30];
 #define DELAY_TIME 40  
 #define SHORT_DELAY_TIME 70*3/4   
          
-#define speedPinR 9   //50  Front Wheel PWM pin connect Right MODEL-X ENA 
-#define RightMotorDirPin1  22    //48 Front Right Motor direction pin 1 to Right MODEL-X IN1  (K1)
-#define RightMotorDirPin2  24   //42  Front Right Motor direction pin 2 to Right MODEL-X IN2   (K1)                                 
-#define LeftMotorDirPin1  26    //44  Front Left Motor direction pin 1 to Right MODEL-X IN3 (K3)
-#define LeftMotorDirPin2  28   //46 Front Left Motor direction pin 2 to Right MODEL-X IN4 (K3)
-#define speedPinL 10   //52  Front Wheel PWM pin connect Right MODEL-X ENB
+#define speedPinR 9  								//50  Front Wheel PWM pin connect Right MODEL-X ENA 
+#define RightMotorDirPin1  22    					//48 Front Right Motor direction pin 1 to Right MODEL-X IN1  (K1)
+#define RightMotorDirPin2  24   					//42  Front Right Motor direction pin 2 to Right MODEL-X IN2   (K1)                                 
+#define LeftMotorDirPin1  26    					//44  Front Left Motor direction pin 1 to Right MODEL-X IN3 (K3)
+#define LeftMotorDirPin2  28   						//46 Front Left Motor direction pin 2 to Right MODEL-X IN4 (K3)
+#define speedPinL 10   								//52  Front Wheel PWM pin connect Right MODEL-X ENB
 
-#define speedPinRB 11   //  Rear Wheel PWM pin connect Left MODEL-X ENA 
-#define RightMotorDirPin1B  5    //Rear Right Motor direction pin 1 to Left  MODEL-X IN1 ( K1)
-#define RightMotorDirPin2B 6    //Rear Right Motor direction pin 2 to Left  MODEL-X IN2 ( K1) 
-#define LeftMotorDirPin1B 7    //Rear Left Motor direction pin 1 to Left  MODEL-X IN3  (K3)
-#define LeftMotorDirPin2B 8  //Rear Left Motor direction pin 2 to Left  MODEL-X IN4 (K3)
-#define speedPinLB 12    //  Rear Wheel PWM pin connect Left MODEL-X ENB
-#define sensor1   A4 // Left most sensor
-#define sensor2   A3 // 2nd Left   sensor
-#define sensor3   A2 // center sensor
-#define sensor4   A1 // 2nd right sensor
-#define sensor5   A0 // Right most sensor
-#define SERVO_PIN     13  //servo connect to D5
-#define Echo_PIN    31 // Ultrasonic Echo pin connect to A5
-#define Trig_PIN    30  // Ultrasonic Trig pin connect to A4
+#define speedPinRB 11   							//  Rear Wheel PWM pin connect Left MODEL-X ENA 
+#define RightMotorDirPin1B  5    					//Rear Right Motor direction pin 1 to Left  MODEL-X IN1 ( K1)
+#define RightMotorDirPin2B 6    					//Rear Right Motor direction pin 2 to Left  MODEL-X IN2 ( K1) 
+#define LeftMotorDirPin1B 7    						//Rear Left Motor direction pin 1 to Left  MODEL-X IN3  (K3)
+#define LeftMotorDirPin2B 8  						//Rear Left Motor direction pin 2 to Left  MODEL-X IN4 (K3)
+#define speedPinLB 12    							//  Rear Wheel PWM pin connect Left MODEL-X ENB
+#define sensor1   A4 								// Left most sensor
+#define sensor2   A3 								// 2nd Left sensor
+#define sensor3   A2 								// center sensor
+#define sensor4   A1 								// 2nd right sensor
+#define sensor5   A0 								// Right most sensor
+#define SERVO_PIN     13  							//servo connect to D5
+#define Echo_PIN    31 								// Ultrasonic Echo pin connect to A5
+#define Trig_PIN    30  							// Ultrasonic Trig pin connect to A4
 
-#define FAST_SPEED  110  //both sides of the motor speed
-#define R_SPEED  165   //both sides of the motor speed
+#define FAST_SPEED  110  							//both sides of the motor speed
+#define R_SPEED  165   								//both sides of the motor speed
 
 
-#define FORWARD_TIME 200   //前進距離
-#define BACK_TIME  300  // 後方距離
-#define TURN_TIME  250  //ロボットが回転するのに費やした時間 (ミリ秒)
-#define OBSTACLE_LIMIT 30  //minimum distance in cm to obstacles at both sides (the car will allow a shorter distance sideways)  両側の障害物までの最小距離 (cm) (車は横方向にこれより短い距離を許可します)
+#define FORWARD_TIME 200   							//前進距離
+#define BACK_TIME  300  							// 後方距離
+#define TURN_TIME  250  							//ロボットが回転するのに費やした時間 (ミリ秒)
+#define OBSTACLE_LIMIT 30  							
 
-#define s00 0  //Module pins wiring
+#define s00 0 										 //Module pins wiring
 #define s01 1
 #define s02 2
 #define s03 3
 #define out 4
 
-#define bt_sw 53    //ON,OFF切り替えスイッチ
-#define bt_time 51  //おすと5s後にきどうするスイッチ
-#define bt_stop 49  //おすと停止
+#define bt_sw 53    								//ON,OFF切り替えスイッチ
+#define bt_time 51  								//おすと5s後にきどうするスイッチ
+#define bt_stop 49  								//おすと停止
 
-#define led_ok 52   //操作準備完了LED
-#define led_red 46
-#define led_green 48
-#define led_yeloow 50
+#define led_ok 52   								//操作準備完了LED
+#define led_red 46									//赤LED
+#define led_green 48								//緑LED
+#define led_yeloow 50								//黃LED
 
-int Red=0, Blue=0, Green=0; //RGB values
-int data = 0;  //This is where we're going to stock our values
+int Red=0, Blue=0, Green=0; 						//RGB values
+int data = 0;  										//This is where we're going to stock our values
 
 int distance;
 Servo head;
 
-const int buttonPin = 32;     // スイッチ入力ピン
+const int buttonPin = 32;     						//スイッチ入力ピン
 /*motor control*/
 void forward(int speed_left,int speed_right)
 {
@@ -221,57 +221,57 @@ void countclockwise(int speed){
    FR_fwd(speed);
    FL_bck(speed); 
 }
-void FR_bck(int speed)  //front-right wheel forward turn
+void FR_bck(int speed)  							//front-right wheel forward turn
 {
   digitalWrite(RightMotorDirPin1, HIGH);
   digitalWrite(RightMotorDirPin2,LOW); 
   analogWrite(speedPinR,speed);
 }
-void FR_fwd(int speed) // front-right wheel backward turn
+void FR_fwd(int speed) 								// front-right wheel backward turn
 {
   digitalWrite(RightMotorDirPin1,LOW);
   digitalWrite(RightMotorDirPin2,HIGH); 
   analogWrite(speedPinR,speed);
 }
-void FL_bck(int speed) // front-left wheel forward turn
+void FL_bck(int speed) 								// front-left wheel forward turn
 {
   digitalWrite(LeftMotorDirPin1,HIGH);
   digitalWrite(LeftMotorDirPin2,LOW);
   analogWrite(speedPinL,speed);
 }
-void FL_fwd(int speed) // front-left wheel backward turn
+void FL_fwd(int speed) 								// front-left wheel backward turn
 {
   digitalWrite(LeftMotorDirPin1,LOW);
   digitalWrite(LeftMotorDirPin2,HIGH);
   analogWrite(speedPinL,speed);
 }
 
-void RR_bck(int speed)  //rear-right wheel forward turn
+void RR_bck(int speed)  							//rear-right wheel forward turn
 {
   digitalWrite(RightMotorDirPin1B, HIGH);
   digitalWrite(RightMotorDirPin2B,LOW); 
   analogWrite(speedPinRB,speed);
 }
-void RR_fwd(int speed)  //rear-right wheel backward turn
+void RR_fwd(int speed)  							//rear-right wheel backward turn
 {
   digitalWrite(RightMotorDirPin1B, LOW);
   digitalWrite(RightMotorDirPin2B,HIGH); 
   analogWrite(speedPinRB,speed);
 }
-void RL_bck(int speed)  //rear-left wheel forward turn
+void RL_bck(int speed) 								 //rear-left wheel forward turn
 {
   digitalWrite(LeftMotorDirPin1B,HIGH);
   digitalWrite(LeftMotorDirPin2B,LOW);
   analogWrite(speedPinLB,speed);
 }
-void RL_fwd(int speed)    //rear-left wheel backward turn
+void RL_fwd(int speed)    							//rear-left wheel backward turn
 {
   digitalWrite(LeftMotorDirPin1B,LOW);
   digitalWrite(LeftMotorDirPin2B,HIGH);
   analogWrite(speedPinLB,speed);
 }
  
-void stop_Stop()    //Stop
+void stop_Stop()    								//Stop
 {
   digitalWrite(RightMotorDirPin1, LOW);
   digitalWrite(RightMotorDirPin2,LOW);
@@ -283,7 +283,9 @@ void stop_Stop()    //Stop
   digitalWrite(LeftMotorDirPin2B,LOW);
   set_Motorspeed(0,0,0,0);
 }
-/*set motor speed */
+
+
+/*    set motor speed    */
 void set_Motorspeed(int leftFront,int rightFront,int leftBack,int rightBack)
 {
   analogWrite(speedPinL,leftFront); 
@@ -292,6 +294,7 @@ void set_Motorspeed(int leftFront,int rightFront,int leftBack,int rightBack)
  analogWrite(speedPinRB,rightBack);
 
 }
+
 /*超音波距離の検出*/
 int watch(){
   long echo_distance;
@@ -301,18 +304,18 @@ int watch(){
   delayMicroseconds(15);
   digitalWrite(Trig_PIN,LOW);
   echo_distance=pulseIn(Echo_PIN,HIGH);
-  echo_distance=echo_distance*0.01657; //物体までの距離は何cmですか
+  echo_distance=echo_distance*0.01657; 				//物体までの距離が何cm
  //Serial.println((int)echo_distance);
   return round(echo_distance);
 }
 
 //左、中央、右までの距離を測定
 String watchsurrounding(){
-/*  object_status は 2 進整数で、最後の 3 桁は左前方、真正面、右前方に障害物があるかどうかを表します。
- ※3桁の文字列、例：100は左前方に障害物があることを意味し、011は真正面と右前方に障害物があることを意味します
+/*  object_status は 2 進整数で、最後の 3 桁は左前方、真正面、右前方に障害物があるかどうかを表す。
+ ※3桁の文字列、例：100は左前方に障害物があることを意味し、011は真正面と右前方に障害物があることを意味する
 */
   int obstacle_status =B1000;
-  head.write(160); //センフォルは左前方向を向いています
+  head.write(160);
   delay(1);
   distance = watch();
   if(distance<OBSTACLE_LIMIT){
@@ -320,7 +323,7 @@ String watchsurrounding(){
     
      obstacle_status  =obstacle_status | B100;
     }
-  head.write(90); //セソルは真正面を向いています
+  head.write(90); 
   delay(1);
   distance = watch();
   if(distance<OBSTACLE_LIMIT){
@@ -329,7 +332,7 @@ String watchsurrounding(){
     obstacle_status  =obstacle_status | B10;
     }
 
-  head.write(20); //センサーは右前方20度方向を向いています
+  head.write(20);
   delay(1);
   distance = watch();
   if(distance<OBSTACLE_LIMIT){
@@ -534,7 +537,7 @@ void loop()
     loopcnt = 0;
   }
 
-  if (buttonState2 == LOW) {        //プルアップなので逆
+  if (buttonState2 == LOW) {        				//プルアップなので逆
     //Line_cmd();    
     go_advance_half(SHIFT_SPEED);               
   }
@@ -551,7 +554,7 @@ void loop()
   }
   
   packetSize = Udp.parsePacket();
-  if (packetSize) {                               // if you get a client,
+  if (packetSize) {                              	// if you get a client,
     Serial.print("Received packet of size ");
     Serial.println(packetSize);
     int len = Udp.read(packetBuffer, 255);
@@ -561,15 +564,15 @@ void loop()
       char c=packetBuffer[0];
       switch (c)    //serial control instructions
       {  
-        case 'B':go_back(SPEED);break;    //↓　B
-        case 'L':left_turn(TURN_SPEED);break;//←　L
-        case 'R':right_turn(TURN_SPEED);break;//→　R
-        case 'A':go_advance(TURN_SPEED);break;//↑　A     //SPEED
-        case 'E':stop_Stop();break;//＝　W
-        case 'F':left_shift(0,150,0,150);break; //F1
-        case 'H':right_shift(180,0,150,0);break; //F3
-        case 'I':left_shift(150,0,150,0); break;//F5
-        case 'K':right_shift(0,130,0,130); break;//F6
+        case 'B':go_back(SPEED);break;    			//↓　B
+        case 'L':left_turn(TURN_SPEED);break;		//←　L
+        case 'R':right_turn(TURN_SPEED);break;		//→　R
+        case 'A':go_advance(TURN_SPEED);break;		//↑　A     //SPEED
+        case 'E':stop_Stop();break;					//＝　W
+        case 'F':left_shift(0,150,0,150);break; 	//F1
+        case 'H':right_shift(180,0,150,0);break; 	//F3
+        case 'I':left_shift(150,0,150,0); break;	//F5
+        case 'K':right_shift(0,130,0,130); break;	//F6
         case 'O':left_shift(200,150,150,200); break;//obstacle
         case 'T':right_shift(200,200,200,200); break;//tracking
 
@@ -601,7 +604,7 @@ void Line(){
 
 void tracking()
 {
-  String obstacle_sign=watchsurrounding(); // 5 桁の障害物サインのバイナリ値は 5 方向の障害物の状態を意味します
+  String obstacle_sign=watchsurrounding(); // 5 桁の障害物サイン
   String senstr="";
   int s0 = !digitalRead(sensor1);
   int s1 = !digitalRead(sensor2);
