@@ -1,0 +1,58 @@
+/*
+ *      kadai1_client.c
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <netinet/in.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <string.h>
+
+#define DEMOTCP_QUELEN 256
+#define DEMOTCP_SRVADR "192.168.76.107"
+
+
+int main (void)
+{
+
+    int                     sfd, rtn;
+    struct sockaddr_in      servaddr;
+
+    char                    buff[DEMOTCP_QUELEN];
+
+
+    sfd = socket(PF_INET, SOCK_STREAM, 0);
+    if (sfd == -1) {
+        perror("socket()");
+        exit(EXIT_FAILURE);
+    }
+
+    memset(&servaddr, 0, sizeof(servaddr));
+
+    servaddr.sin_family      = AF_INET;
+
+    inet_aton(DEMOTCP_SRVADR, &servaddr.sin_addr);
+//    servaddr.sin_port        = htons(5555);
+    servaddr.sin_port        = htons(8000);
+
+    rtn = connect(sfd, (struct sockaddr *) &servaddr, sizeof(servaddr));
+
+    if (sfd == -1) {
+        perror("connect()");
+        exit(EXIT_FAILURE);
+    }
+
+
+    rtn = send(sfd, "TEST\n", 6, 0);
+    if (sfd == -1) {
+        perror("sendto()");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("succses");
+    close(sfd);
+    
+
+}
